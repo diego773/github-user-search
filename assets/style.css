@@ -12,6 +12,7 @@
   --color-header-text: rgba(205, 217, 229, 0.7);
   --color-fg-muted: #768390;
   --color-canvas-default: #22272e;
+  --color-repo-bg: #22272e;
 }
 
 body {
@@ -73,11 +74,14 @@ body {
   display: flex;
   justify-content: center;
   border: 1px solid white;
-  height: 20rem;
-  margin-top: 1rem;
+  height: 42rem;
 }
 
 .display-user-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   border: 1px solid grey;
   margin: 1rem 0;
   width: 22rem;
@@ -86,19 +90,148 @@ body {
   border-radius: 0.5rem;
 }
 
-.user-card {
-  border: 1px solid red;
-}
-
 .user-card-header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  border: 1px solid white;
+  border: 1px solid yellow;
+  height: 8rem;
+  width: 22rem;
+}
+
+.user-avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  border: 1px solid red;
+  width: 6rem;
+  height: 6rem;
+  border: transparent;
 }
 
 .user-card-img {
+  border-radius: 5rem;
+  border: transparent;
+  width: 6rem;
+  height: 6rem;
+}
+
+.user-info-container {
   border: 1px solid red;
-  width: 3rem;
+  width: 13.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 6rem;
+  margin-top: 1rem;
+}
+
+.user-name {
+  border: 1px solid blue;
+  /* width: 15rem; */
+  color: white;
+}
+
+.user-email {
+  color: white;
+}
+
+.user-date {
+  color: white;
+}
+
+.user-bio-container {
+  border: 1px solid pink;
+  width: 22rem;
+  height: 10rem;
+  margin-top: 1rem;
+}
+
+.user-bio {
+  color: white;
+}
+
+.show-repos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 22rem;
+  height: 7rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-repo-bg);
+  border: 1px solid mediumslateblue;
+}
+
+.repo-text {
+  color: white;
+}
+
+.user-info-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  width: 22rem;
+  height: 10rem;
+  border: 1px solid lightsalmon;
+}
+
+.location-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.twitter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.company-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.location-text {
+  color: white;
+}
+
+.twitter-text {
+  color: white;
+}
+
+.blog-text {
+  color: white;
+}
+
+.company-text {
+  color: white;
+}
+
+.fa-location-dot {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-link {
+  color: white;
+}
+
+.fa-building {
+  color: white;
 }

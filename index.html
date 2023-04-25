@@ -13,41 +13,75 @@
 
   <header class="search-header">
     <section class="search-user">
-      <form action="">
+      <form id="form" autocomplete="off">
         <label for="">
-          <input class="search-input" type="text" placeholder="Search GitHub username..."></input>
+          <input class="search-input" id="search-input" type="text" placeholder="Search GitHub username..."></input>
         </label>
+        <button class="search-button" type="submit">
+          <p class="search-text">Search</p>
+        </button>
       </form>
-      <button class="search-button">
-        <p class="search-text">Search</p>
-      </button>
     </section>
   </header>
 
   <main class="main-container">
     <section class="display-user-card">
-      <div class="user-card-header">
-        <img class="user-card-img" src="" alt="">user picture
-        <h2>User full name</h2>
-        <p>date</p>
-        <p>Notes users intrest</p>
+      <div class="user-card-header" id="user-card-header">
+        <img class="user-card-img" id="user-card-img" alt="">
+        <div class="user-info-container">
+          <h2 class="user-name" id="user-name">User full name</h2>
+          <h3 class="user-email" id="user-email">email</h3>
+          <h4 class="user-date" id="user-date">date</h4>
+        </div>
+      </div>
+      <div class="user-bio-container">
+        <h4 class="user-bio" id="user-notes"></h4>
       </div>
       <section class="show-repos">
-        <h3>repos</h3>
-        <h3>followers</h3>
-        <h3>following</h3>
+        <div class="repo-text">
+          <header class="repo-text">
+            <h3 class="repo-text">Repos</h3>
+          </header>
+          <h2 id="repos"></h2>
+        </div>
+        <div class="repo-text">
+          <header class="repo-text">
+            <h3 class="repo-text">Followers</h3>
+          </header>
+          <h2 id="followers"></h2>
+        </div>
+        <div class="repo-text">
+          <header class="repo-text">
+            <h3 class="repo-text">Following</h3>
+          </header>
+          <h2 id="following"></h2>
+        </div>
       </section>
-      <section class="users-info">
-        <div>
-          <img src="" alt="">location-icon
-          <img src="" alt="">twitter-icon
-          <img src="" alt="">website-icon
-          <img src="" alt="">building-icon
+      <section class="user-info-footer">
+        <div class="location-container">
+          <i class="fa-solid fa-location-dot"></i>
+          <h2 class="location-text" id="location"></h2>
+        </div>
+        <div class="twitter-container">
+          <i class="fa-brands 
+          fa-twitter"></i>
+          <h2 class="twitter-text" id="twitter"></h2>
+        </div>
+        <div class="blog-container">
+          <i class="fa-solid 
+          fa-link"></i>
+          <h2 class="blog-text" id="blog"></h2>
+        </div>
+        <div class="company-container">
+          <i class="fa-solid 
+          fa-building"></i>
+          <h2 class="company-text" id="company"></h2>
         </div>
       </section>
     </section>
   </main>
 
+  <script src="https://kit.fontawesome.com/ba760f4967.js" crossorigin="anonymous"></script>
 
   <script src="./script.js"></script>
 </body>
