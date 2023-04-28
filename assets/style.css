@@ -222,6 +222,9 @@ body {
 
 .twitter-text {
   color: var(--color-fg-default);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .blog-text {
@@ -234,6 +237,9 @@ body {
 
 .company-text {
   color: var(--color-fg-default);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .fa-location-dot {
@@ -250,4 +256,268 @@ body {
 
 .fa-building {
   color: var(--color-fg-muted);
+}
+
+/* small tablets */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .search-header {
+    /* height: 10rem; */
+    /* width: 50rem; */
+    border: 1px solid salmon;
+  }
+
+  .search-user {
+    display: flex;
+    justify-content: space-around;
+    width: 32rem;
+  }
+
+  .search-input {
+    width: 22rem;
+  }
+
+  .search-button {
+    width: 7rem;
+  }
+
+  .search-text {
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .display-user-card {
+    width: 32rem;
+    border: 1px solid royalblue;
+  }
+
+  .main-container {
+    border: 1px solid rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 48rem; */
+  }
+
+  .user-card-header {
+    border: 1px solid pink;
+    height: 10rem;
+    width: 30rem;
+  }
+
+  .user-avatar-container {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+
+  .user-card-img {
+    width: 8.5rem;
+    height: 8.5rem;
+  }
+
+  .user-info-container {
+    border: 1px solid lavender;
+  }
+
+  .user-bio-container {
+    border: 1px solid moccasin;
+    width: 30rem;
+  }
+
+  .show-repos {
+    width: 30rem;
+    justify-content: space-evenly;
+  }
+
+  .repo-text-header {
+    border: 1px solid magenta;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+
+  .repo-display-container {
+    border: 1px solid magenta;
+    gap: 9rem;
+    justify-content: flex-start;
+    padding-left: 1.9rem;
+  }
+
+  .user-info-footer {
+    border: 1px solid blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 30rem;
+    margin-top: 1rem;
+  }
+
+  .location-container {
+    gap: 0.8rem;
+    height: 3rem;
+    border: 1px solid silver;
+  }
+
+  .twitter-container {
+    gap: 0.8rem;
+    border: 1px solid silver;
+    height: 3rem;
+  }
+
+  .blog-container {
+    gap: 0.5rem;
+    border: 1px solid silver;
+    height: 3rem;
+  }
+
+  .company-container {
+    border: 1px solid silver;
+    gap: 0.8rem;
+    height: 3rem;
+  }
+
+  .blog-text {
+    border: 1px solid silver;
+    width: 14.3rem;
+  }
+
+  .company-text {
+    /* width: 14.3rem; */
+    border: 1px solid white;
+  }
+}
+
+/* large tablets and laptop styles */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .search-header {
+    /* height: 10rem; */
+    /* width: 50rem; */
+    border: 1px solid salmon;
+  }
+
+  .search-user {
+    display: flex;
+    justify-content: space-around;
+    width: 42rem;
+  }
+
+  .search-input {
+    width: 32rem;
+  }
+
+  .search-button {
+    width: 8rem;
+  }
+
+  .search-text {
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .display-user-card {
+    width: 42rem;
+    border: 1px solid royalblue;
+  }
+
+  .main-container {
+    border: 1px solid rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 48rem; */
+  }
+
+  .user-card-header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    /* display: flex;
+    justify-content: space-evenly; */
+    border: 1px solid pink;
+    height: 12rem;
+    width: 38rem;
+  }
+
+  .user-avatar-container {
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+
+  .user-card-img {
+    width: 9.5rem;
+    height: 9.5rem;
+  }
+
+  .user-info-container {
+    border: 1px solid lavender;
+    margin-top: 0;
+  }
+
+  .user-bio-container {
+    border: 1px solid moccasin;
+    width: 38rem;
+  }
+
+  .show-repos {
+    width: 38rem;
+    justify-content: space-evenly;
+  }
+
+  .repo-text-header {
+    border: 1px solid magenta;
+    justify-content: space-between;
+    gap: 0;
+    padding: 0 6rem 0 2rem;
+  }
+
+  .repo-display-container {
+    border: 1px solid magenta;
+    gap: 0rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9.5rem 0 1.9rem;
+  }
+
+  .user-info-footer {
+    border: 1px solid blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 38rem;
+    margin-top: 1rem;
+  }
+
+  .location-container {
+    gap: 0.8rem;
+    height: 3rem;
+    border: 1px solid silver;
+  }
+
+  .twitter-container {
+    gap: 0.8rem;
+    border: 1px solid silver;
+    height: 3rem;
+  }
+
+  .blog-container {
+    gap: 0.5rem;
+    border: 1px solid silver;
+    height: 3rem;
+  }
+
+  .company-container {
+    border: 1px solid silver;
+    gap: 0.8rem;
+    height: 3rem;
+  }
+}
+
+/* large desktops/laptops style */
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+}
+
+/* x-large desktops/laptops/screens style */
+@media screen and (min-width: 1400px) {
 }
