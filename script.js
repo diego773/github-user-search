@@ -5,7 +5,7 @@ const searchInput = document.getElementById("search-input");
 const formSubmitHandler = (e) => {
   e.preventDefault();
 
-  let username = searchInput.value.trim();
+  const username = searchInput.value.trim();
 
   if (!username) {
     alert("Please enter github username");
@@ -13,6 +13,7 @@ const formSubmitHandler = (e) => {
     fetchUserApi(username);
 
     searchInput.value = " ";
+    return;
   }
 };
 
@@ -36,7 +37,9 @@ const updateDom = (user) => {
     alert("no data");
     return;
   }
+
   userContainerInfo(user);
+  return;
 };
 
 const userContainerInfo = (user) => {
@@ -85,7 +88,7 @@ const userCardHeader = (user) => {
   dateJoined.textContent = user.created_at;
 };
 
-const userBioContainer = (user) => {
+function userBioContainer(user) {
   const userBio = document.getElementById("user-notes");
 
   if (!user.bio) {
@@ -94,7 +97,7 @@ const userBioContainer = (user) => {
   }
 
   userBio.textContent = user.bio;
-};
+}
 
 const showReposFollowers = (user) => {
   const repos = document.getElementById("repos");
@@ -133,7 +136,8 @@ const userInfoFooter = (user) => {
 
   !user.blog
     ? (blog.textContent = "Not Available")
-    : (blog.textContent = user.blog);
+    : (blog.textContent = user.blog),
+    blog.setAttribute("href", blog.html_url);
 };
 
 fetchUserApi("diego773");

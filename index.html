@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ba760f4967.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./assets/style.css">
   <title>GitHub user search app</title>
 </head>
@@ -37,23 +38,16 @@
         <h4 class="user-bio" id="user-notes"></h4>
       </div>
       <section class="show-repos">
-        <div class="repo-text">
-          <header class="repo-text">
-            <h3 class="repo-text">Repos</h3>
-          </header>
-          <h2 id="repos"></h2>
-        </div>
-        <div class="repo-text">
-          <header class="repo-text">
-            <h3 class="repo-text">Followers</h3>
-          </header>
-          <h2 id="followers"></h2>
-        </div>
-        <div class="repo-text">
-          <header class="repo-text">
-            <h3 class="repo-text">Following</h3>
-          </header>
-          <h2 id="following"></h2>
+        <header class="repo-text-header">
+          <h3 class="repo-text">Repos</h3>
+          <h3 class="repo-text">Followers</h3>
+          <h3 class="repo-text">Following</h3>
+        </header>
+        <div class="repo-display-container">
+          <h2 class="repo-display-text" id="repos"></h2>
+          <h2 class="repo-display-text" id="followers"></h2>
+          <h2 class="repo-display-text" id="following"></h2>
+
         </div>
       </section>
       <section class="user-info-footer">
@@ -80,7 +74,6 @@
     </section>
   </main>
 
-  <script src="https://kit.fontawesome.com/ba760f4967.js" crossorigin="anonymous"></script>
 
   <script src="./script.js"></script>
 </body>
