@@ -260,12 +260,6 @@ body {
 
 /* small tablets */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .search-header {
-    /* height: 10rem; */
-    /* width: 50rem; */
-    border: 1px solid salmon;
-  }
-
   .search-user {
     display: flex;
     justify-content: space-around;
@@ -287,19 +281,15 @@ body {
 
   .display-user-card {
     width: 32rem;
-    border: 1px solid royalblue;
   }
 
   .main-container {
-    border: 1px solid rebeccapurple;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 48rem; */
   }
 
   .user-card-header {
-    border: 1px solid pink;
     height: 10rem;
     width: 30rem;
   }
@@ -314,12 +304,7 @@ body {
     height: 8.5rem;
   }
 
-  .user-info-container {
-    border: 1px solid lavender;
-  }
-
   .user-bio-container {
-    border: 1px solid moccasin;
     width: 30rem;
   }
 
@@ -329,24 +314,22 @@ body {
   }
 
   .repo-text-header {
-    border: 1px solid magenta;
     justify-content: space-around;
     gap: 3rem;
   }
 
   .repo-display-container {
-    border: 1px solid magenta;
     gap: 9rem;
     justify-content: flex-start;
     padding-left: 1.9rem;
   }
 
   .user-info-footer {
-    border: 1px solid blueviolet;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     width: 30rem;
     margin-top: 1rem;
   }
@@ -354,46 +337,34 @@ body {
   .location-container {
     gap: 0.8rem;
     height: 3rem;
-    border: 1px solid silver;
+    width: 12rem;
   }
 
   .twitter-container {
     gap: 0.8rem;
-    border: 1px solid silver;
     height: 3rem;
+    width: 10rem;
   }
 
   .blog-container {
     gap: 0.5rem;
-    border: 1px solid silver;
     height: 3rem;
+    width: 17rem;
   }
 
   .company-container {
-    border: 1px solid silver;
     gap: 0.8rem;
     height: 3rem;
+    width: 10rem;
   }
 
   .blog-text {
-    border: 1px solid silver;
     width: 14.3rem;
-  }
-
-  .company-text {
-    /* width: 14.3rem; */
-    border: 1px solid white;
   }
 }
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  .search-header {
-    /* height: 10rem; */
-    /* width: 50rem; */
-    border: 1px solid salmon;
-  }
-
   .search-user {
     display: flex;
     justify-content: space-around;
@@ -415,24 +386,18 @@ body {
 
   .display-user-card {
     width: 42rem;
-    border: 1px solid royalblue;
   }
 
   .main-container {
-    border: 1px solid rebeccapurple;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 48rem; */
   }
 
   .user-card-header {
     display: flex;
     justify-content: flex-start;
     gap: 3rem;
-    /* display: flex;
-    justify-content: space-evenly; */
-    border: 1px solid pink;
     height: 12rem;
     width: 38rem;
   }
@@ -448,12 +413,10 @@ body {
   }
 
   .user-info-container {
-    border: 1px solid lavender;
     margin-top: 0;
   }
 
   .user-bio-container {
-    border: 1px solid moccasin;
     width: 38rem;
   }
 
@@ -463,14 +426,12 @@ body {
   }
 
   .repo-text-header {
-    border: 1px solid magenta;
     justify-content: space-between;
     gap: 0;
     padding: 0 6rem 0 2rem;
   }
 
   .repo-display-container {
-    border: 1px solid magenta;
     gap: 0rem;
     display: flex;
     justify-content: space-between;
@@ -478,13 +439,12 @@ body {
   }
 
   .user-info-footer {
-    border: 1px solid blueviolet;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 0;
     width: 38rem;
     margin-top: 1rem;
   }
@@ -492,32 +452,343 @@ body {
   .location-container {
     gap: 0.8rem;
     height: 3rem;
-    border: 1px solid silver;
+    width: 18rem;
   }
 
   .twitter-container {
     gap: 0.8rem;
-    border: 1px solid silver;
     height: 3rem;
+    width: 15rem;
   }
 
   .blog-container {
     gap: 0.5rem;
-    border: 1px solid silver;
     height: 3rem;
+    width: 18rem;
   }
 
   .company-container {
-    border: 1px solid silver;
     gap: 0.8rem;
     height: 3rem;
+    width: 15rem;
   }
 }
 
 /* large desktops/laptops style */
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .search-user {
+    display: flex;
+    justify-content: space-around;
+    width: 55rem;
+  }
+
+  .search-input {
+    width: 45rem;
+  }
+
+  .search-button {
+    width: 8rem;
+  }
+
+  .search-text {
+    font-size: 1.1rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .display-user-card {
+    width: 55rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .user-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    height: 11rem;
+    width: 50rem;
+  }
+
+  .user-avatar-container {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .user-card-img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .user-info-container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 0;
+    width: 35rem;
+    height: 7rem;
+  }
+
+  .user-email {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+  }
+
+  .user-date {
+    order: 1;
+    align-self: flex-end;
+    margin-bottom: 4.8rem;
+  }
+
+  .user-bio-container {
+    width: 35rem;
+    margin: 0 0 0 13.5rem;
+  }
+
+  .show-repos {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 0 13.5rem;
+    gap: 0;
+  }
+
+  .repo-text-header {
+    display: flex;
+    justify-content: space-around;
+    width: 35rem;
+  }
+
+  .repo-display-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35rem;
+  }
+
+  .repo-display-text {
+    width: 4.5rem;
+  }
+
+  .user-info-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 35rem;
+    margin: 0 0 1rem 13.5rem;
+    height: 8rem;
+    gap: 0;
+  }
+
+  .location-container {
+    gap: 0.8rem;
+    height: 3rem;
+    width: 15rem;
+  }
+
+  .location-text {
+    font-size: 1rem;
+  }
+
+  .twitter-container {
+    gap: 0.5rem;
+    height: 3rem;
+    width: 12rem;
+  }
+
+  .twitter-text {
+    font-size: 1rem;
+  }
+
+  .blog-container {
+    gap: 0.5rem;
+    height: 5rem;
+    width: 15rem;
+  }
+
+  .blog-text {
+    color: var(--color-fg-default);
+    width: 15rem;
+    font-size: 1rem;
+  }
+
+  .company-container {
+    gap: 0.5rem;
+    height: 3rem;
+    width: 12rem;
+  }
+
+  .company-text {
+    font-size: 1rem;
+  }
 }
 
 /* x-large desktops/laptops/screens style */
 @media screen and (min-width: 1400px) {
+  .search-user {
+    display: flex;
+    justify-content: space-around;
+    width: 70rem;
+  }
+
+  .search-input {
+    width: 60rem;
+  }
+
+  .search-button {
+    width: 8rem;
+  }
+
+  .search-text {
+    font-size: 1.2rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .display-user-card {
+    width: 70rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .user-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    height: 13rem;
+    width: 65rem;
+  }
+
+  .user-avatar-container {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .user-card-img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .user-info-container {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 0;
+    width: 45rem;
+    height: 5rem;
+  }
+
+  .user-name {
+    font-size: 2.2rem;
+  }
+
+  .user-email {
+    font-size: 1.3rem;
+  }
+
+  .user-date {
+    order: 1;
+    align-self: flex-end;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .user-bio-container {
+    width: 45rem;
+    margin: 0 0 0 17.5rem;
+  }
+
+  .show-repos {
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 0 17.5rem;
+    gap: 0;
+  }
+
+  .repo-text-header {
+    display: flex;
+    justify-content: space-around;
+    width: 45rem;
+  }
+
+  .repo-display-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 45rem;
+  }
+
+  .repo-display-text {
+    width: 4.5rem;
+  }
+
+  .user-info-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 45rem;
+    margin: 0 0 1rem 17.5rem;
+    height: 10rem;
+    gap: 0;
+  }
+
+  .location-container {
+    gap: 0.8rem;
+    height: 3rem;
+    width: 15rem;
+  }
+
+  .location-text {
+    font-size: 1rem;
+  }
+
+  .twitter-container {
+    gap: 0.5rem;
+    height: 3rem;
+    width: 15rem;
+  }
+
+  .twitter-text {
+    font-size: 1rem;
+  }
+
+  .blog-container {
+    gap: 0.5rem;
+    height: 5rem;
+    width: 25rem;
+  }
+
+  .blog-text {
+    color: var(--color-fg-default);
+    width: 22rem;
+    font-size: 1.2rem;
+  }
+
+  .company-container {
+    gap: 0.5rem;
+    height: 3rem;
+    width: 15rem;
+  }
+
+  .company-text {
+    font-size: 1rem;
+  }
 }
