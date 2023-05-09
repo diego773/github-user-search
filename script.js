@@ -1,4 +1,4 @@
-// const searchButton = document.getElementById("search-button");
+const searchButton = document.getElementById("search-button");
 const form = document.getElementById("form");
 const searchInput = document.getElementById("search-input");
 
@@ -130,4 +130,4 @@ const userInfoFooter = (user) => {
 };
 
 getUserApi("diego773");
-form.addEventListener("click", formSubmitHandler);
+searchButton.addEventListener("click", formSubmitHandler);

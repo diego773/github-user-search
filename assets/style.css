@@ -63,6 +63,12 @@ body {
   width: 4.5rem;
   border-radius: 0.5rem;
   background-color: var(--blue);
+  cursor: pointer;
+}
+
+.search-button:hover {
+  transition: 0.2s;
+  background-color: #4a6a96;
 }
 
 .search-text {
@@ -274,6 +280,11 @@ body {
     width: 7rem;
   }
 
+  .search-button:hover {
+    transition: 0.2s;
+    background-color: #4a6a96;
+  }
+
   .search-text {
     font-size: 1.1rem;
     letter-spacing: 0.15rem;
@@ -377,6 +388,11 @@ body {
 
   .search-button {
     width: 8rem;
+  }
+
+  .search-button:hover {
+    transition: 0.2s;
+    background-color: #4a6a96;
   }
 
   .search-text {
@@ -488,6 +504,11 @@ body {
 
   .search-button {
     width: 8rem;
+  }
+
+  .search-button:hover {
+    transition: 0.2s;
+    background-color: #4a6a96;
   }
 
   .search-text {
@@ -646,6 +667,12 @@ body {
 
   .search-button {
     width: 8rem;
+    cursor: pointer;
+  }
+
+  .search-button:hover {
+    transition: 0.2s;
+    background-color: #4a6a96;
   }
 
   .search-text {
