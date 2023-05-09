@@ -253,7 +253,7 @@ body {
   word-break: break-word;
 }
 
-.blog-link {
+.user-website-url {
   color: var(--color-fg-default);
   font-size: 1.2rem;
   width: 22rem;
@@ -261,7 +261,7 @@ body {
   cursor: pointer;
 }
 
-.blog-link:hover {
+.user-website-url:hover {
   color: var(--color-fg-muted);
 }
 
@@ -387,14 +387,15 @@ body {
     width: 17rem;
   }
 
-  .blog-link {
+  .user-website-url {
     color: var(--color-fg-default);
+    font-size: 1.2rem;
     width: 22rem;
     text-decoration: none;
     cursor: pointer;
   }
 
-  .blog-link:hover {
+  .user-website-url:hover {
     color: var(--color-fg-muted);
   }
 
@@ -518,7 +519,7 @@ body {
     width: 18rem;
   }
 
-  .blog-link {
+  .user-website-url {
     color: var(--color-fg-default);
     font-size: 1.2rem;
     width: 22rem;
@@ -526,7 +527,7 @@ body {
     cursor: pointer;
   }
 
-  .blog-link:hover {
+  .user-website-url:hover {
     color: var(--color-fg-muted);
   }
 
@@ -683,10 +684,16 @@ body {
     width: 15rem;
   }
 
-  .blog-text {
+  .user-website-url {
     color: var(--color-fg-default);
-    width: 15rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    width: 22rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .user-website-url:hover {
+    color: var(--color-fg-muted);
   }
 
   .company-container {
