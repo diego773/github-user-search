@@ -215,6 +215,18 @@ body {
   gap: 1.1rem;
 }
 
+.blog-link {
+  color: var(--color-fg-default);
+  font-size: 1.2rem;
+  width: 22rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blog-link:hover {
+  color: var(--color-fg-muted);
+}
+
 .company-container {
   display: flex;
   justify-content: flex-start;
@@ -239,6 +251,18 @@ body {
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
+}
+
+.blog-link {
+  color: var(--color-fg-default);
+  font-size: 1.2rem;
+  width: 22rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blog-link:hover {
+  color: var(--color-fg-muted);
 }
 
 .company-text {
@@ -363,6 +387,17 @@ body {
     width: 17rem;
   }
 
+  .blog-link {
+    color: var(--color-fg-default);
+    width: 22rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .blog-link:hover {
+    color: var(--color-fg-muted);
+  }
+
   .company-container {
     gap: 0.8rem;
     height: 3rem;
@@ -481,6 +516,18 @@ body {
     gap: 0.5rem;
     height: 3rem;
     width: 18rem;
+  }
+
+  .blog-link {
+    color: var(--color-fg-default);
+    font-size: 1.2rem;
+    width: 22rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .blog-link:hover {
+    color: var(--color-fg-muted);
   }
 
   .company-container {
@@ -805,10 +852,16 @@ body {
     width: 25rem;
   }
 
-  .blog-text {
+  .user-website-url {
     color: var(--color-fg-default);
-    width: 22rem;
     font-size: 1.2rem;
+    width: 22rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .user-website-url:hover {
+    color: var(--color-fg-muted);
   }
 
   .company-container {

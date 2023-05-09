@@ -102,6 +102,7 @@ const userInfoFooter = (user) => {
   const twitter = document.getElementById("twitter");
   const blog = document.getElementById("blog");
   const company = document.getElementById("company");
+  const userWebsite = document.querySelector(".user-website-url");
 
   if (!user.location) {
     location.textContent = "";
@@ -124,8 +125,8 @@ const userInfoFooter = (user) => {
   if (!user.blog) {
     blog.textContent = "";
   } else {
-    blog.textContent = user.blog;
-    blog.setAttribute("href", blog.html_url);
+    userWebsite.textContent = user.blog;
+    userWebsite.href = user.blog;
   }
 };
 
